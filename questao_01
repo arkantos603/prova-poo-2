@@ -1,0 +1,26 @@
+Uma classe abstrata é declarada usando a palavra-chave abstract. Uma classe abstrata pode conter métodos abstratos, que são declarados, mas não fornecem uma implementação. Para instanciar uma classe, você deve criar uma classe derivada que forneça implementações para todos os métodos abstratos da classe base.
+
+exemplo:
+
+abstract class Animal {
+  abstract fazerBarulho(): void;
+
+  mover(): void {
+    console.log("O animal está se movendo.");
+  }
+}
+
+ Tentar instanciar uma classe abstrata resultará em um erro.
+
+class Cachorro extends Animal {
+  fazerBarulho(): void {
+    console.log("O cachorro faz woof!");
+  }
+}
+
+ Agora podemos criar uma instância da classe derivada.
+const cachorro = new Cachorro();
+cachorro.fazerBarulho();
+cachorro.mover();
+
+Neste exemplo, Animal é uma classe abstrata com um método abstrato fazerBarulho(). A classe derivada Cachorro implementa esse método abstrato e pode ser instanciada. A tentativa de instanciar diretamente a classe abstrata Animal resultaria em um erro.
