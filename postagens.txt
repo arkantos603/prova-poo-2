@@ -1,0 +1,3 @@
+1;ol bom dia;;0;0;2023-12-13T15:35:49.742Z
+2;Trabalho complicado!;;0;0;2023-12-13T15:36:23.110Z
+3;Todos os alunos merecem 10!;;0;0;2023-12-13T16:03:37.229Z
